@@ -1,5 +1,7 @@
-![Client CI](https://github.com/Yooooomi/your_spotify/workflows/Client%20CI/badge.svg)
-![Server CI](https://github.com/Yooooomi/your_spotify/workflows/Server%20CI/badge.svg)
+![Client CI](https://github.com/michaelkennethdavid/your_spotify/workflows/Client%20CI/badge.svg)
+![Server CI](https://github.com/michaelkennethdavid/your_spotify/workflows/Server%20CI/badge.svg)
+
+> Donate to the YourSpotify maintainer https://github.com/Yooooomi<br>
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=BLAPT49PK9A8G)
 
 <p align='center'>
@@ -42,14 +44,14 @@ It's composed of a web server which polls the Spotify API every now and then and
 
 ## Using `docker-compose`
 
-Follow the [docker-compose-example.yml](https://github.com/Yooooomi/your_spotify/blob/master/docker-compose-example.yml) to host your application through docker.
+Follow the [docker-compose-example.yml](https://github.com/michaelkennethdavid/your_spotify/blob/master/docker-compose-example.yml) to host your application through docker.
 
 ```yml
 version: "3"
 
 services:
   server:
-    image: yooooomi/your_spotify_server
+    image: kenndavid/your_spotify_server
     restart: always
     ports:
       - "8080:8080"
@@ -71,7 +73,7 @@ services:
       - ./your_spotify_db:/data/db
 
   web:
-    image: yooooomi/your_spotify_client
+    image: kenndavid/your_spotify_client
     restart: always
     ports:
       - "3000:3000"
@@ -83,7 +85,7 @@ services:
 
 ## Installing locally (not recommended)
 
-You can follow the instructions [here](https://github.com/Yooooomi/your_spotify/blob/master/LOCAL_INSTALL.md). Note that you will still have to do the steps below.
+You can follow the instructions [here](https://github.com/michaelkennethdavid/your_spotify/blob/master/LOCAL_INSTALL.md). Note that you will still have to do the steps below.
 
 ## Environment
 
