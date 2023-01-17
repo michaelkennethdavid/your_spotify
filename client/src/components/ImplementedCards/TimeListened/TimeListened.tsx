@@ -39,7 +39,7 @@ export default function TimeListened({ className }: TimeListenedProps) {
 
   if (!result || !resultOld) {
     return (
-      <TitleCard title="Time listened" className={className}>
+      <TitleCard title="Minutes listened" className={className}>
         <div className={s.root}>
           <Text className={s.number}>
             <Skeleton width={50} />
@@ -58,7 +58,7 @@ export default function TimeListened({ className }: TimeListenedProps) {
   const percentMore = getPercentMore(oldCount, count);
 
   return (
-    <TitleCard title="Time listened" className={className} fade>
+    <TitleCard title="Minutes listened" className={className} fade>
       <div className={s.root}>
         <Text element="span" className={s.number}>
           {msToMinutes(count)} minutes

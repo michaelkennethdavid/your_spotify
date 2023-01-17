@@ -35,7 +35,7 @@ export default function Privacy() {
         request them{' '}
         <a
           target="_blank"
-          href="https://www.spotify.com/us/account/privacy/"
+          href="https://www.spotify.com/account/privacy/"
           rel="noreferrer">
           here
         </a>

@@ -46,7 +46,7 @@ export default function TimeListenedPer({ className }: TimeListenedPerProps) {
 
   if (!result) {
     return (
-      <LoadingImplementedChart title="Time listened" className={className} />
+      <LoadingImplementedChart title="Minutes listened" className={className} />
     );
   }
 
@@ -55,7 +55,7 @@ export default function TimeListenedPer({ className }: TimeListenedPerProps) {
   }
 
   return (
-    <ChartCard title="Time listened" className={className}>
+    <ChartCard title="Minutes listened" className={className}>
       <Line
         data={data}
         xFormat={formatX}

@@ -127,7 +127,7 @@ export default function BestOfHour({ className }: BestOfHourProps) {
   if (!result) {
     return (
       <LoadingImplementedChart
-        title={`Best ${element} for hour of day`}
+        title={`Top ${element} for hour of day`}
         className={className}
       />
     );
@@ -135,7 +135,7 @@ export default function BestOfHour({ className }: BestOfHourProps) {
 
   return (
     <ChartCard
-      title={`Best ${element} for hour of day`}
+      title={`Top ${element} for hour of day`}
       right={
         <Select
           value={element}

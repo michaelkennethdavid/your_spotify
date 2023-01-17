@@ -106,12 +106,12 @@ export default function BestArtistsBar({ className }: BestArtistsBarProps) {
 
   if (!result) {
     return (
-      <LoadingImplementedChart title="Best artists" className={className} />
+      <LoadingImplementedChart title="Top artists" className={className} />
     );
   }
 
   return (
-    <ChartCard ref={ref} title="Best artists" className={className}>
+    <ChartCard ref={ref} title="Top artists" className={className}>
       <Bar
         data={data}
         customTooltip={<Tooltip title={tooltipTitle} value={tooltipValue} />}

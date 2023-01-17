@@ -20,7 +20,7 @@ export default function BestSong({ className }: BestSongProps) {
 
   if (!result) {
     return (
-      <TitleCard title="Best song" className={clsx(s.root, className)}>
+      <TitleCard title="Top song" className={clsx(s.root, className)}>
         <div className={s.container}>
           <div className={s.imgcontainer}>
             <Skeleton
@@ -48,13 +48,13 @@ export default function BestSong({ className }: BestSongProps) {
   const res = result[0];
 
   return (
-    <TitleCard title="Best song" className={clsx(s.root, className)}>
+    <TitleCard title="Top song" className={clsx(s.root, className)}>
       <div className={s.container}>
         <div className={s.imgcontainer}>
           <img
             className={s.image}
             src={getImage(res?.album)}
-            alt="Your best song"
+            alt="Your top song"
           />
         </div>
         <div className={s.stats}>

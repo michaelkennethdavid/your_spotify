@@ -22,7 +22,7 @@ export default function Login() {
         Your Spotify
       </Text>
       <Text className={s.welcome}>
-        To access your personal dashboard, please login through Spotify
+        To access your personal dashboard, please login through&nbsp;Spotify
       </Text>
       <div>
         <a className={s.link} href={getSpotifyLogUrl()}>
