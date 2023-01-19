@@ -31,18 +31,35 @@ export default function FullPrivacy() {
   return (
     <div>
       <Text className={s.import}>
-        Here you can import previous data from Spotify privacy data. This is the
-        data you requested by mail specifically asking for extended data. It
-        usually takes a few weeks for them to get back to you. Once received,
-        upload here your files beginning with <code>endsong</code>
-        .
+        By importing data from Spotify, you can view your streaming history
+        since the creation of your account.
         <br />
-        Read more{' '}
+        <br />
+        1. Go to the Spotify website and log in to your account.
+        <br />
+        2. Click on the &quot;Account&quot; tab in the top right corner of the
+        page.
+        <br />
+        3. Select &quot;Privacy Settings&quot; from the side bar.
+        <br />
+        4. Scroll down to the bottom of the page until you see the
+        &quot;Download your data&quot;.
+        <br />
+        5. Select the &quot;Extended streaming history&quot;.
+        <br />
+        6. Click the &quot;Request Data&quot; button. It usually takes a few
+        weeks for them to prepare your data.
+        <br />
+        <br />
+        You will receive an email when it&apos;s ready. Once received, upload
+        your files here beginning with <code>endsong</code>.
+        <br />
+        <br />
         <a
           target="_blank"
           href="https://www.spotify.com/account/privacy/"
           rel="noreferrer">
-          here
+          https://www.spotify.com/account/privacy/
         </a>
       </Text>
       <label htmlFor="contained-button-file">

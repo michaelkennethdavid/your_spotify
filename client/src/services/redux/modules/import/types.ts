@@ -5,7 +5,6 @@ export type ImporterStateStatus =
   | 'failure-removed';
 
 export enum ImporterStateTypes {
-  privacy = 'privacy',
   fullPrivacy = 'full-privacy',
 }
 
@@ -20,7 +19,7 @@ export interface BaseImporterState {
 }
 
 export interface PrivacyImporterState extends BaseImporterState {
-  type: ImporterStateTypes.privacy;
+  type: ImporterStateTypes.fullPrivacy;
   metadata: string[];
 }
 
